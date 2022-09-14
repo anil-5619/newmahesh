@@ -19,7 +19,7 @@ pipeline{
     
         stage("checkout"){
             steps{
-                git https://github.com/anil-5619/newmahesh.git
+                git credentialsId: '443c9a14-3ec6-4dc8-9264-c39875ba3a5b', url: 'https://github.com/anil-5619/newmahesh.git'
             }
         }
         stage("compile"){
